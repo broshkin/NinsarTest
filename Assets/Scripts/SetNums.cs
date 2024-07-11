@@ -37,7 +37,7 @@ public class SetNums : MonoBehaviour
 
     private void SetRandomSpawn()
     {
-        centerNum = new Vector2(Random.Range(0, txt[0].Length - 2), Random.Range(0, txt.Length - 1));
+        centerNum = new Vector2(Random.Range(0, txt.Length - 1), Random.Range(0, txt[0].Length - 2));
     }
 
     private void GetCurrentPos(int i)
