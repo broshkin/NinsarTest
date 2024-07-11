@@ -29,7 +29,7 @@ public class SetNums : MonoBehaviour
         {
             GetCurrentPos(i);
 
-            num = txt[((int)currentNum.x + ((txt[0].Length - 1) * Mathf.Abs((int)currentNum.x))) % (txt[0].Length - 1)][((int)currentNum.y + (txt.Length * Mathf.Abs((int)currentNum.y))) % txt.Length] - 48;
+            num = txt[((int)currentNum.x + (txt.Length * Mathf.Abs((int)currentNum.x))) % txt.Length][((int)currentNum.y + ((txt[0].Length - 1) * Mathf.Abs((int)currentNum.y))) % (txt[0].Length - 1)] - 48;
 
             SetColorOnCube(num, cubes[i]);
         }
